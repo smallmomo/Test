@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp_ID">
+	<display-name>MyNote</display-name>
+  <servlet>
+    <servlet-name>TaskServlet</servlet-name>
+    <servlet-class>com.mynote.Servlet.TaskServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.mynote.Servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FinancialServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.mynote.Servlet.FinancialServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ArticleServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.mynote.Servlet.ArticleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CollectServlet</servlet-name>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <description>This is the description of my J2EE component</description>
+    <servlet-class>com.mynote.Servlet.CollectServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>TaskServlet</servlet-name>
+    <url-pattern>/Servlet/TaskServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/Servlet/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FinancialServlet</servlet-name>
+    <url-pattern>/Servlet/FinancialServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ArticleServlet</servlet-name>
+    <url-pattern>/servlet/ArticleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CollectServlet</servlet-name>
+    <url-pattern>/servlet/CollectServlet</url-pattern>
+  </servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>login.htm</welcome-file>
+
+	</welcome-file-list>
+</web-app>
