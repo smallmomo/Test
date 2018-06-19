@@ -29,8 +29,6 @@ node("master") {
             ${MVN_BIN} package -Dmaven.test.skip=true
             ${TOMCAT_HOME}/bin/catalina.sh stop || true
             cp target/MyNoteJ4-0.0.1-SNAPSHOT.war ${TOMCAT_HOME}/webapps/
-            unzip ${TOMCAT_HOME}/webapps/MyNoteJ4-0.0.1-SNAPSHOT.war -d ${TOMCAT_HOME}/webapps >/dev/null
-            rm -f ${TOMCAT_HOME}/webapps/MyNoteJ4-0.0.1-SNAPSHOT.war
             ${TOMCAT_HOME}/bin/catalina.sh start
         """
     }
